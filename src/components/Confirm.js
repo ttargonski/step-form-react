@@ -3,36 +3,33 @@ import React from "react";
 const Confirm = props => {
   return (
     <React.Fragment>
-      <div className="wrapper">
-        <div className="header">Entered data</div>
-        <div className="confirm">
-          <p>
-            First Name:{" "}
-            <span className="confirm-data">{props.values.firstName}</span>
-          </p>
-          <p>
-            Last Name:{" "}
-            <span className="confirm-data">{props.values.lastName}</span>
-          </p>
-          <p>
-            Email: <span className="confirm-data">{props.values.email}</span>
-          </p>
-          <p>
-            City: <span className="confirm-data">{props.values.city}</span>
-          </p>
-          <p>
-            Occupation:{" "}
-            <span className="confirm-data">{props.values.occupation}</span>
-          </p>
-          <p>
-            Gender: <span className="confirm-data">{props.values.gender}</span>
-          </p>
-          <button className="confirm" onClick={props.nextStep}>
+      <div className="form">
+        <div className="form-header">Confirm the data</div>
+        <div className="form-confirm">
+          <p>First Name:</p>
+          <span className="form-confirm-data"> {props.values.firstName}</span>
+
+          <p>Last Name:</p>
+          <span className="form-confirm-data"> {props.values.lastName}</span>
+
+          <p>Email:</p>
+          <span className="form-confirm-data"> {props.values.email}</span>
+
+          <p>City:</p>
+          <span className="form-confirm-data"> {props.values.city}</span>
+
+          <p>Occupation:</p>
+          <span className="form-confirm-data"> {props.values.occupation}</span>
+
+          <p>Gender:</p>
+          <span className="form-confirm-data"> {props.values.gender}</span>
+        </div>
+
+        <div className="form-nav">
+          <button onClick={props.backStep}>Back</button>
+          <button className="form-confirm-btn" onClick={props.handleUpdateData}>
             Confirm
           </button>
-        </div>
-        <div className="navigation">
-          <button onClick={props.backStep}>Back</button>
         </div>
       </div>
     </React.Fragment>

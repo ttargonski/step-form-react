@@ -2,10 +2,12 @@ import React from "react";
 
 const Success = () => {
   return (
-    <div className="wrapper">
-      <div className="header">Success!</div>
-      <h2>Thank you for joining us</h2>
-      <h3>Confirm the account by email</h3>
+    <div className="form">
+      <div className="form-header">Success!</div>
+      <div className="form-success">
+        <p>Thank you for joining us</p>
+        <p>Confirm the account by email</p>
+      </div>
     </div>
   );
 };

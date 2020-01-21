@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import Welcome from "./Welcome";
 import UserDetails from "./UserDetails";
 import PersonalDetails from "./PersonalDetails";
 import Confirm from "./Confirm";
 import Success from "./Success";
+import "./UserForm.css";
 
 class UserForm extends Component {
   state = {
-    step: 0,
+    step: 1,
     firstName: "",
     lastName: "",
     email: "",
@@ -15,6 +15,43 @@ class UserForm extends Component {
     occupation: "",
     gender: "",
     data: []
+  };
+
+  // data update
+  handleUpdateData = () => {
+    let data = [...this.state.data];
+
+    if (
+      this.state.firstName === "" ||
+      this.state.lastName === "" ||
+      this.state.email === "" ||
+      this.state.occupation === "" ||
+      this.state.city === "" ||
+      this.state.gender === ""
+    ) {
+      alert("Please fill out all fields");
+    } else {
+      data.push({
+        firstName: `${this.state.firstName}`,
+        lastName: `${this.state.lastName}`,
+        email: `${this.state.email}`,
+        city: `${this.state.city}`,
+        occupation: `${this.state.occupation}`,
+        gender: `${this.state.gender}`
+      });
+
+      this.setState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        city: "",
+        occupation: "",
+        gender: "",
+        data: data
+      });
+
+      this.nextStep();
+    }
   };
 
   // next step function
@@ -39,15 +76,6 @@ class UserForm extends Component {
     const values = { firstName, lastName, email, city, occupation, gender };
 
     switch (this.state.step) {
-      case 0:
-        return (
-          <Welcome
-            values={values}
-            nextStep={this.nextStep}
-            handleChange={this.handleChange}
-          />
-        );
-
       case 1:
         return (
           <UserDetails
@@ -75,6 +103,7 @@ class UserForm extends Component {
             nextStep={this.nextStep}
             backStep={this.backStep}
             handleChange={this.handleChange}
+            handleUpdateData={this.handleUpdateData}
           />
         );
 

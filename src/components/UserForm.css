@@ -1,0 +1,142 @@
+:root {
+    --gray-color: #4D4646;
+    --green-color: #7FCD91;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--gray-color);
+}
+
+.form-header {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 35px 0;
+    color: var(--gray-color);
+}
+
+.form-input {
+    background-color: #eeeeee;
+    font-size: 16px;
+    border: none;
+    width: 300px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.form-input::placeholder {
+    color: var(--gray-color);
+    opacity: 0.5;
+}
+
+.form-nav button {
+    width: 100px;
+    padding: 15px;
+    background-color: var(--green-color);
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    margin: 30px 10px;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.form-nav button:hover {
+    box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    color: var(--green-color)
+}
+
+.form-footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--gray-color);
+    color: white;
+}
+
+.form-footer button {
+    color: var(--green-color);
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-confirm {
+    min-width: 360px;
+    text-align: left;
+    background-color: #EEEEEE;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.form-confirm p {
+    color: var(--gray-color);
+    opacity: 0.5;
+    font-size: 15px;
+    margin: 10px 0 0 0;
+}
+
+.form-confirm-data {
+    color: var(--green-color);
+    font-weight: bold;
+    margin: 0;
+    font-size: 16x;
+
+}
+
+.form-success {
+    text-align: center;
+}
+
+.form-success p {
+    font-size: 26px;
+}
+
+.form-success p:nth-last-child(1) {
+    color: var(--green-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+@media (min-width: 700px) {
+
+    .form {
+        width: 100vw;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 10vw;
+        background: url(../img/wave.png) no-repeat;
+        background-position: right;
+        min-height: 100vh;
+        background-size: contain;
+    }
+
+    .form-header {
+        font-size: 40px;
+    }
+
+    .form-success {
+        text-align: left;
+    }
+
+    .form-footer {
+        padding: 0 10vw;
+        text-align: left;
+
+    }
+}
