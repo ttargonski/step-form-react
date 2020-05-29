@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.ffbbf822.chunk.css",
-    "main.js": "/static/js/main.88bda691.chunk.js",
-    "main.js.map": "/static/js/main.88bda691.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.af6f0f8f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.af6f0f8f.js.map",
-    "static/js/2.5f851811.chunk.js": "/static/js/2.5f851811.chunk.js",
-    "static/js/2.5f851811.chunk.js.map": "/static/js/2.5f851811.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.420276e00336d18964729843bf8afbe1.js": "/precache-manifest.420276e00336d18964729843bf8afbe1.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.ffbbf822.chunk.css.map": "/static/css/main.ffbbf822.chunk.css.map",
-    "static/js/2.5f851811.chunk.js.LICENSE": "/static/js/2.5f851811.chunk.js.LICENSE",
-    "static/media/UserForm.css": "/static/media/wave.999f4b06.png"
+    "main.css": "/step-form-react/static/css/main.3a5e1750.chunk.css",
+    "main.js": "/step-form-react/static/js/main.6a7053cb.chunk.js",
+    "main.js.map": "/step-form-react/static/js/main.6a7053cb.chunk.js.map",
+    "runtime-main.js": "/step-form-react/static/js/runtime-main.17126851.js",
+    "runtime-main.js.map": "/step-form-react/static/js/runtime-main.17126851.js.map",
+    "static/js/2.5f851811.chunk.js": "/step-form-react/static/js/2.5f851811.chunk.js",
+    "static/js/2.5f851811.chunk.js.map": "/step-form-react/static/js/2.5f851811.chunk.js.map",
+    "index.html": "/step-form-react/index.html",
+    "precache-manifest.1243412e2f0f9423c71eb0f161a6bbfe.js": "/step-form-react/precache-manifest.1243412e2f0f9423c71eb0f161a6bbfe.js",
+    "service-worker.js": "/step-form-react/service-worker.js",
+    "static/css/main.3a5e1750.chunk.css.map": "/step-form-react/static/css/main.3a5e1750.chunk.css.map",
+    "static/js/2.5f851811.chunk.js.LICENSE": "/step-form-react/static/js/2.5f851811.chunk.js.LICENSE",
+    "static/media/UserForm.css": "/step-form-react/static/media/wave.999f4b06.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.af6f0f8f.js",
+    "static/js/runtime-main.17126851.js",
     "static/js/2.5f851811.chunk.js",
-    "static/css/main.ffbbf822.chunk.css",
-    "static/js/main.88bda691.chunk.js"
+    "static/css/main.3a5e1750.chunk.css",
+    "static/js/main.6a7053cb.chunk.js"
   ]
 }
